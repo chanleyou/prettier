@@ -538,10 +538,10 @@ exports[`filter.vue - vue-verify 1`] = `
   <div
     class="not-allowed"
     v-if="
-      value |
-        thisIsARealSuperLongFilterPipe('arg1', arg2) |
-        anotherPipeLongJustForFun |
-        pipeTheThird
+      value
+        | thisIsARealSuperLongFilterPipe('arg1', arg2)
+        | anotherPipeLongJustForFun
+        | pipeTheThird
     "
   ></div>
 </template>
@@ -588,10 +588,10 @@ exports[`filter.vue - vue-verify 2`] = `
   <div
     class="not-allowed"
     v-if="
-      value |
-        thisIsARealSuperLongFilterPipe('arg1', arg2) |
-        anotherPipeLongJustForFun |
-        pipeTheThird
+      value
+        | thisIsARealSuperLongFilterPipe('arg1', arg2)
+        | anotherPipeLongJustForFun
+        | pipeTheThird
     "
   ></div>
 </template>
@@ -917,16 +917,16 @@ exports[`pre-child.vue - vue-verify 1`] = `
 <template>
   <pre class="woot">
   123{{
-      wqeqwwqwqweqweqwewwq ||
-        wqeqwwqwqweqweqwewwq ||
-        wqeqwwqwqweqweqwewwq ||
-        wqeqwwqwqweqweqwewwq
+      wqeqwwqwqweqweqwewwq
+        || wqeqwwqwqweqweqwewwq
+        || wqeqwwqwqweqweqwewwq
+        || wqeqwwqwqweqweqwewwq
     }}123
   123{{
-      wqeqwwqwqweqweqwewwq ||
-        wqeqwwqwqweqweqwewwq ||
-        wqeqwwqwqweqweqwewwq ||
-        wqeqwwqwqweqweqwewwq
+      wqeqwwqwqweqweqwewwq
+        || wqeqwwqwqweqweqwewwq
+        || wqeqwwqwqweqweqwewwq
+        || wqeqwwqwqweqweqwewwq
     }}123
     </pre
   >
@@ -1015,16 +1015,16 @@ exports[`pre-child.vue - vue-verify 2`] = `
 <template>
   <pre class="woot">
   123{{
-      wqeqwwqwqweqweqwewwq ||
-        wqeqwwqwqweqweqwewwq ||
-        wqeqwwqwqweqweqwewwq ||
-        wqeqwwqwqweqweqwewwq
+      wqeqwwqwqweqweqwewwq
+        || wqeqwwqwqweqweqwewwq
+        || wqeqwwqwqweqweqwewwq
+        || wqeqwwqwqweqweqwewwq
     }}123
   123{{
-      wqeqwwqwqweqweqwewwq ||
-        wqeqwwqwqweqweqwewwq ||
-        wqeqwwqwqweqweqwewwq ||
-        wqeqwwqwqweqweqwewwq
+      wqeqwwqwqweqweqwewwq
+        || wqeqwwqwqweqweqwewwq
+        || wqeqwwqwqweqweqwewwq
+        || wqeqwwqwqweqweqwewwq
     }}123
     </pre
   >
