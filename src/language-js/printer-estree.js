@@ -5203,16 +5203,10 @@ function printBinaryishExpressions(
     }
 
     const shouldInline = shouldInlineLogicalExpression(node);
-    const lineBeforeOperator = node.operator === "|>";
 
     const right = shouldInline
       ? concat([node.operator, " ", path.call(print, "right")])
-      : concat([
-          lineBeforeOperator ? softline : "",
-          node.operator,
-          lineBeforeOperator ? " " : line,
-          path.call(print, "right")
-        ]);
+      : concat([softline, node.operator, " ", path.call(print, "right")]);
 
     // If there's only a single binary expression, we want to create a group
     // in order to avoid having a small right part like -1 be on its own line.
