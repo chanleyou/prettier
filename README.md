@@ -1,3 +1,35 @@
+# :fork_and_knife: This is a fork.
+
+Compared to `prettier`, `@btmills/prettier` moves binary operators to the beginning of new lines in long expressions instead of the end of the previous line. That's it.
+
+```js
+// Before:
+const before =
+  bom.length >= 2 &&
+  ((bom.charCodeAt(0) === 0xff && bom.charCodeAt(1) === 0xfe) ||
+    (bom.charCodeAt(0) === 0xfe && bom.charCodeAt(1) === 0xff));
+
+// After:
+const after =
+  bom.length >= 2
+  && ((bom.charCodeAt(0) === 0xff && bom.charCodeAt(1) === 0xfe)
+    || (bom.charCodeAt(0) === 0xfe && bom.charCodeAt(1) === 0xff));
+```
+
+## Usage
+
+If you use Yarn, you can [install using an alias](https://yarnpkg.com/lang/en/docs/cli/add/#toc-yarn-add-alias) so that `require('prettier')` transparently resolves to this fork:
+
+```sh
+$ yarn add -D prettier@npm:@btmills/prettier
+```
+
+## Releases
+
+Releases of the forked package are done by rebasing the `line-before-operator` branch on top of the most recent version tag in `master`.
+
+---
+
 ![Prettier Banner](https://raw.githubusercontent.com/prettier/prettier-logo/master/images/prettier-banner-light.png)
 
 <h2 align="center">Opinionated Code Formatter</h2>
