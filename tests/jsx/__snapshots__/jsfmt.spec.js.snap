@@ -811,8 +811,8 @@ cable ? (
 // JSX element somewhere in the chain. It is breaking; notice the consequents
 // and alternates in the entire chain get wrapped in parens.
 <div>
-  {properties.length > 1 ||
-  (properties.length === 1 && properties[0].apps.size > 1) ? (
+  {properties.length > 1
+  || (properties.length === 1 && properties[0].apps.size > 1) ? (
     draggingApp == null || newPropertyName == null ? (
       <MigrationPropertyListItem />
     ) : (
@@ -1090,8 +1090,8 @@ cable ? (
 // JSX element somewhere in the chain. It is breaking; notice the consequents
 // and alternates in the entire chain get wrapped in parens.
 <div>
-  {properties.length > 1 ||
-  (properties.length === 1 && properties[0].apps.size > 1) ? (
+  {properties.length > 1
+  || (properties.length === 1 && properties[0].apps.size > 1) ? (
     draggingApp == null || newPropertyName == null ? (
       <MigrationPropertyListItem />
     ) : (
@@ -1369,8 +1369,8 @@ cable ? (
 // JSX element somewhere in the chain. It is breaking; notice the consequents
 // and alternates in the entire chain get wrapped in parens.
 <div>
-  {properties.length > 1 ||
-  (properties.length === 1 && properties[0].apps.size > 1) ? (
+  {properties.length > 1
+  || (properties.length === 1 && properties[0].apps.size > 1) ? (
     draggingApp == null || newPropertyName == null ? (
       <MigrationPropertyListItem />
     ) : (
@@ -1648,8 +1648,8 @@ cable ? (
 // JSX element somewhere in the chain. It is breaking; notice the consequents
 // and alternates in the entire chain get wrapped in parens.
 <div>
-  {properties.length > 1 ||
-  (properties.length === 1 && properties[0].apps.size > 1) ? (
+  {properties.length > 1
+  || (properties.length === 1 && properties[0].apps.size > 1) ? (
     draggingApp == null || newPropertyName == null ? (
       <MigrationPropertyListItem />
     ) : (
@@ -1842,13 +1842,13 @@ exports[`expression.js - flow-verify 1`] = `
 <RadioListItem
   key={option}
   imageSource={
-    this.props.veryBigItemImageSourceFunc &&
-    this.props.veryBigItemImageSourceFunc(option)
+    this.props.veryBigItemImageSourceFunc
+    && this.props.veryBigItemImageSourceFunc(option)
   }
   imageSize={this.props.veryBigItemImageSize}
   imageView={
-    this.props.veryBigItemImageViewFunc &&
-    this.props.veryBigItemImageViewFunc(option)
+    this.props.veryBigItemImageViewFunc
+    && this.props.veryBigItemImageViewFunc(option)
   }
   heading={this.props.displayTextFunc(option)}
   value={option}
@@ -2121,13 +2121,13 @@ exports[`expression.js - flow-verify 2`] = `
 <RadioListItem
   key={option}
   imageSource={
-    this.props.veryBigItemImageSourceFunc &&
-    this.props.veryBigItemImageSourceFunc(option)
+    this.props.veryBigItemImageSourceFunc
+    && this.props.veryBigItemImageSourceFunc(option)
   }
   imageSize={this.props.veryBigItemImageSize}
   imageView={
-    this.props.veryBigItemImageViewFunc &&
-    this.props.veryBigItemImageViewFunc(option)
+    this.props.veryBigItemImageViewFunc
+    && this.props.veryBigItemImageViewFunc(option)
   }
   heading={this.props.displayTextFunc(option)}
   value={option}
@@ -2400,13 +2400,13 @@ exports[`expression.js - flow-verify 3`] = `
 <RadioListItem
   key={option}
   imageSource={
-    this.props.veryBigItemImageSourceFunc &&
-    this.props.veryBigItemImageSourceFunc(option)
+    this.props.veryBigItemImageSourceFunc
+    && this.props.veryBigItemImageSourceFunc(option)
   }
   imageSize={this.props.veryBigItemImageSize}
   imageView={
-    this.props.veryBigItemImageViewFunc &&
-    this.props.veryBigItemImageViewFunc(option)
+    this.props.veryBigItemImageViewFunc
+    && this.props.veryBigItemImageViewFunc(option)
   }
   heading={this.props.displayTextFunc(option)}
   value={option}
@@ -2679,13 +2679,13 @@ exports[`expression.js - flow-verify 4`] = `
 <RadioListItem
   key={option}
   imageSource={
-    this.props.veryBigItemImageSourceFunc &&
-    this.props.veryBigItemImageSourceFunc(option)
+    this.props.veryBigItemImageSourceFunc
+    && this.props.veryBigItemImageSourceFunc(option)
   }
   imageSize={this.props.veryBigItemImageSize}
   imageView={
-    this.props.veryBigItemImageViewFunc &&
-    this.props.veryBigItemImageViewFunc(option)
+    this.props.veryBigItemImageViewFunc
+    && this.props.veryBigItemImageViewFunc(option)
   }
   heading={this.props.displayTextFunc(option)}
   value={option}
@@ -2947,8 +2947,8 @@ exports[`hug.js - flow-verify 1`] = `
 </div>;
 
 <div>
-  {member.memberName.memberSomething +
-    (member.memberDef.memberSomething.signatures ? "()" : "")}
+  {member.memberName.memberSomething
+    + (member.memberDef.memberSomething.signatures ? "()" : "")}
 </div>;
 
 `;
@@ -3020,8 +3020,8 @@ exports[`hug.js - flow-verify 2`] = `
 </div>;
 
 <div>
-  {member.memberName.memberSomething +
-    (member.memberDef.memberSomething.signatures ? "()" : "")}
+  {member.memberName.memberSomething
+    + (member.memberDef.memberSomething.signatures ? "()" : "")}
 </div>;
 
 `;
@@ -3093,8 +3093,8 @@ exports[`hug.js - flow-verify 3`] = `
 </div>;
 
 <div>
-  {member.memberName.memberSomething +
-    (member.memberDef.memberSomething.signatures ? '()' : '')}
+  {member.memberName.memberSomething
+    + (member.memberDef.memberSomething.signatures ? '()' : '')}
 </div>;
 
 `;
@@ -3166,8 +3166,8 @@ exports[`hug.js - flow-verify 4`] = `
 </div>;
 
 <div>
-  {member.memberName.memberSomething +
-    (member.memberDef.memberSomething.signatures ? '()' : '')}
+  {member.memberName.memberSomething
+    + (member.memberDef.memberSomething.signatures ? '()' : '')}
 </div>;
 
 `;

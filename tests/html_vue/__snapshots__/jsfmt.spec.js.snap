@@ -506,10 +506,10 @@ exports[`filter.vue - vue-verify 1`] = `
   <div
     class="not-allowed"
     v-if="
-      value |
-        thisIsARealSuperLongFilterPipe('arg1', arg2) |
-        anotherPipeLongJustForFun |
-        pipeTheThird
+      value
+        | thisIsARealSuperLongFilterPipe('arg1', arg2)
+        | anotherPipeLongJustForFun
+        | pipeTheThird
     "
   ></div>
 </template>
@@ -556,10 +556,10 @@ exports[`filter.vue - vue-verify 2`] = `
   <div
     class="not-allowed"
     v-if="
-      value |
-        thisIsARealSuperLongFilterPipe('arg1', arg2) |
-        anotherPipeLongJustForFun |
-        pipeTheThird
+      value
+        | thisIsARealSuperLongFilterPipe('arg1', arg2)
+        | anotherPipeLongJustForFun
+        | pipeTheThird
     "
   ></div>
 </template>
