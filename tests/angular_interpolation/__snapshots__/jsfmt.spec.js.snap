@@ -6,8 +6,8 @@ exports[`logical-expression.ng - __ng_interpolation-verify 1`] = `
 ]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 [
-  advancedSearchService.patientInformationFieldsRow2 &&
-    advancedSearchService.patientInformationFieldsRow2.indexOf(
+  advancedSearchService.patientInformationFieldsRow2
+    && advancedSearchService.patientInformationFieldsRow2.indexOf(
       advancedSearchService.formElementData.customFieldList[i].customFieldType
     ) !== -1
 ]
